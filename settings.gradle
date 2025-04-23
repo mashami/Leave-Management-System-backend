@@ -1,1 +1,9 @@
-rootProject.name = 'spring-boot-security'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
+}
+
+rootProject.name = 'leave-management-system-backend'

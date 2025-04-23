@@ -1,5 +1,7 @@
 package com.springbootsecurity.springbootsecurity;
 
+import com.springbootsecurity.user.User;
+import com.springbootsecurity.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
