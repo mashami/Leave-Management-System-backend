@@ -1,5 +1,6 @@
 package com.springbootsecurity.springbootsecurity;
 
+import com.springbootsecurity.user.User;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Optional;

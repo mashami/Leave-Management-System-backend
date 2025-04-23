@@ -1,4 +1,4 @@
-package com.springbootsecurity.springbootsecurity;
+package com.springbootsecurity.user;
 
 // package com.springbootsecurity.springbootsecurity;
 

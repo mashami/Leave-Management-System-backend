@@ -1,7 +1,7 @@
 package com.springbootsecurity.springbootsecurity;
 
-import com.springbootsecurity.springbootsecurity.User;
-import com.springbootsecurity.springbootsecurity.UserRepository;
+import com.springbootsecurity.user.User;
+import com.springbootsecurity.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;

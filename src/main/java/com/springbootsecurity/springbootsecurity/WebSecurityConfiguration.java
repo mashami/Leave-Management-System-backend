@@ -36,17 +36,19 @@ public class WebSecurityConfiguration {
       .authorizeHttpRequests(
         auth ->
           auth
-            .requestMatchers("/api/auth/login")
+            .requestMatchers("/api/**")
             .permitAll()
-            .requestMatchers("/home")
+            .requestMatchers("/api/create-departments")
             .permitAll()
-            .requestMatchers("/admin")
-            .authenticated()
+            .requestMatchers("/api/invitations")
+            .permitAll()
+            .requestMatchers("/**")
+            .permitAll()
             .anyRequest()
             .authenticated()
       )
       .authenticationProvider(authenticationProvider())
-      .csrf(csrf -> csrf.disable()); // For APIs like Postman
+      .csrf(csrf -> csrf.disable());
     return http.build();
   }
 }
