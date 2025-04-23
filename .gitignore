@@ -1,0 +1,12 @@
+/build/
+
+/out/
+
+*.class
+
+.DS_Store
+
+.gradle/
+
+build/
+

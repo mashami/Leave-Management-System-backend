@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "9090:9090"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      # Add other environment variables as needed
+    # If you have a database, you can add it like this:
+    # depends_on:
+    #   - db
+  
+  # Example database service (uncomment if needed)
+  # db:
+  #   image: postgres:15-alpine
+  #   ports:
+  #     - "5432:5432"
+  #   environment:
+  #     - POSTGRES_DB=myapp
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=password 
